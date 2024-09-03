@@ -3,38 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Contacto</title>
 </head>
 <body>
 
     <!-- Menú de Navegación -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="about.html">Sobre Mí</a></li>
-            <li><a href="resume.html">Currículum</a></li>
-            <li><a href="services.html">Servicios</a></li>
-            <li><a href="contact.html">Contacto</a></li>
-        </ul>
-    </nav>
+    <header>
+        <div class="logo">
+            <h2 class="nombre-portfolio"> Ivan Rapisarda</h2>
+        </div>
+        <div>
+        <nav>
+            <ul>
+                <a href="index.html" class="nav-link">Inicio</a>
+                <a href="about.html" class="nav-link">Sobre Mí</a>
+                <a href="resume.html" class="nav-link">Currículum</a>
+                <a href="services.html" class="nav-link">Servicios</a>
+                <a href="contact.html" class="nav-link">Contacto</a>
+            </ul>
+        </nav>
+        </div>
+    </header>
 
     <!-- Contenido de Contacto -->
-    <section>
+     <div class="container">
+    <section class="section">
         <h1>Contacto</h1>
         <p>En el caso de que necesites contactarte conmigo, podés hacerlo vía:</p>
         <p>Email: ivrapisarda@uade.edu.ar</p>
         <p>Teléfono: +5491132264557</p>
         <p>Si te parece más cómodo, podés hacerlo mediante el siguiente formulario:</p>
         <form>
-            <label for="name">Nombre:</label><br>
-            <input type="text" id="name" name="name"><br><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email"><br><br>
-            <label for="message">Mensaje:</label><br>
-            <textarea id="message" name="message"></textarea><br><br>
+            <label for="name">Nombre</label><br>
+            <input type="text" id="name" name="name" placeholder="Tu nombre..."><br><br>
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email" placeholder="Tu mail..."><br><br>
+            <label for="message">Mensaje</label><br>
+            <textarea id="message" name="message" placeholder="Déjanos un mensaje..."></textarea><br><br>
             <input type="submit" value="Enviar">
         </form>
     </section>
-
+</div>
+<footer>
+    <p>&copy; 2023 Iván Rapisarda. Todos los derechos reservados.</p>
+</footer>
 </body>
+</html>
 </html>
