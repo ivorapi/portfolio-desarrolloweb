@@ -3,23 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Sobre Mí</title>
 </head>
 <body>
 
     <!-- Menú de Navegación (igual que en index.html) -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="about.html">Sobre Mí</a></li>
-            <li><a href="resume.html">Currículum</a></li>
-            <li><a href="services.html">Servicios</a></li>
-            <li><a href="contact.html">Contacto</a></li>
-        </ul>
-    </nav>
+    <header>
+        <div class="logo">
+            <h2 class="nombre-portfolio"> Ivan Rapisarda</h2>
+        </div>
+        <div>
+        <nav>
+            <ul>
+                <a href="index.html" class="nav-link">Inicio</a>
+                <a href="about.html" class="nav-link">Sobre Mí</a>
+                <a href="resume.html" class="nav-link">Currículum</a>
+                <a href="services.html" class="nav-link">Servicios</a>
+                <a href="contact.html" class="nav-link">Contacto</a>
+            </ul>
+        </nav>
+        </div>
+    </header>
 
     <!-- Contenido de la Página Sobre Mí -->
-    <section>
+     <div class="container">
+    <section id="about" class="section">
         <h1>Sobre Mí</h1>
         <p>Mi nombre es Ivan Rapisarda, hice el secundario en el colegio Santo Cristo de Lanus y me egresé en modalidad economía y administración.
             Hice 3 años de Lic. en Ciencias Biológicas pero me di cuenta que la tecnología es lo que más me apasiona.</p>
@@ -27,6 +36,9 @@
         <p>Me apasiona satisfacer las necesidades de los usuarios y también detectar activamente fallos y posibilidades de mejora. 
             Motivado al realizar un trabajo. Constante. Proactivo y con facilidad para el trabajo en equipo.</p>
     </section>
-
+    </div>
+    <footer>
+    <p>&copy; 2023 Iván Rapisarda. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
