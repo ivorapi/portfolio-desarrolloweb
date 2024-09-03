@@ -3,31 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Servicios</title>
 </head>
 <body>
 
     <!-- Menú de Navegación -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="about.html">Sobre Mí</a></li>
-            <li><a href="resume.html">Currículum</a></li>
-            <li><a href="services.html">Servicios</a></li>
-            <li><a href="contact.html">Contacto</a></li>
-        </ul>
-    </nav>
+    <header>
+        <div class="logo">
+            <h2 class="nombre-portfolio"> Ivan Rapisarda</h2>
+        </div>
+        <div>
+        <nav>
+            <ul>
+                <a href="index.html" class="nav-link">Inicio</a>
+                <a href="about.html" class="nav-link">Sobre Mí</a>
+                <a href="resume.html" class="nav-link">Currículum</a>
+                <a href="services.html" class="nav-link">Servicios</a>
+                <a href="contact.html" class="nav-link">Contacto</a>
+            </ul>
+        </nav>
+        </div>
+    </header>
 
     <!-- Contenido de Servicios -->
-    <section>
-        <h1>Servicios</h1>
-        <p>Lista de los servicios ofrecidos:</p>
-        <ul>
-            <li>Representante de Customer Experience</li>
-            <li>Manejo de Bases de datos con SQL</li>
-            <li>Desarrollo Web</li>
-        </ul>
-    </section>
-
+    <div class="container">
+        <section id="servicios" class="section">
+            <h2>Servicios</h2>
+            <div class="service">
+                <h3>Desarrollo Web</h3>
+                <p>Creación de sitios web responsivos y aplicaciones web utilizando las últimas tecnologías.</p>
+            </div>
+            <div class="service">
+                <h3>Soporte Técnico</h3>
+                <p>Asistencia y resolución de problemas técnicos para usuarios y clientes.</p>
+            </div>
+            <div class="service">
+                <h3>Análisis de Datos</h3>
+                <p>Interpretación y análisis de datos para mejorar procesos y toma de decisiones.</p>
+            </div>
+            <div class="service">
+                <h3>Optimización de Procesos</h3>
+                <p>Identificación y mejora de procesos para aumentar la eficiencia y productividad.</p>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2023 Iván Rapisarda. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
