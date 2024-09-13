@@ -6,6 +6,7 @@ body{
     background-color:#f4f4f4;
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
 
 a{  
@@ -28,7 +29,11 @@ footer{
     justify-content: center;
     background: #ffffff;
     border-top: #e8e8e8 3px solid;
-}   
+}
+
+main {
+    flex: 1;
+}
 
 .logo {
     display: flex;
@@ -54,10 +59,10 @@ nav a:hover{
 }
 
 .container {
-    width: 75%;
+    max-width: 80%;
     margin: auto;
     padding: 1.5em;
-    display: flex;
+   
 }
 .section{
     background: #ffffff;
