@@ -1,20 +1,27 @@
+/* Importa la fuente "Roboto" desde Google Fonts para utilizar en toda la página */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-body{
+/* Define estilos básicos para el cuerpo de la página, como la fuente, fondo, 
+   y configuración de diseño en columna para ocupar toda la pantalla */
+body {
     font-family: "Roboto", sans-serif;
     margin: 0;
-    background-color:#f4f4f4;
+    background-color: #f4f4f4;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-a{  
+/* Establece estilos básicos para todos los enlaces, removiendo el subrayado
+   y configurando el color */
+a {
     text-decoration: none;
     color: black;
 }
 
-header{
+/* Estilos de la cabecera de la página (header) para mostrar la barra de 
+   navegación y elementos alineados y centrados en los extremos */
+header {
     display: flex;
     justify-content: space-between;
     min-height: 70px;
@@ -24,72 +31,85 @@ header{
     border-bottom: #e8e8e8 3px solid;
 }
 
-footer{
+/* Define estilos para el pie de página (footer), con el contenido centrado 
+   y una línea superior de separación */
+footer {
     display: flex;
     justify-content: center;
     background: #ffffff;
     border-top: #e8e8e8 3px solid;
 }
 
+/* Configura el área principal (main) para que se expanda ocupando 
+   el espacio disponible entre el header y footer */
 main {
     flex: 1;
 }
 
+/* Estilos para el contenedor del logo, con elementos alineados verticalmente */
 .logo {
     display: flex;
     align-items: center;
 }
 
-nav a{
+/* Define estilo para los enlaces de navegación, incluyendo 
+   el peso de fuente y espacio entre ellos */
+nav a {
     font-weight: 600;
     padding-right: 10px;
 }
 
-nav a:hover{
-    color:gray
+/* Cambia el color del enlace de navegación cuando se pasa el cursor sobre él */
+nav a:hover {
+    color: gray;
 }
 
-@media (max-width:700px) {
+/* Configura estilos responsivos para pantallas de hasta 700px, 
+   colocando los elementos del header en columna */
+@media (max-width: 700px) {
     header {
         flex-direction: column;
     }
-    nav{
+    nav {
         padding: 10px 0px;
     }
 }
 
+/* Estilos de la clase .container, que establece un ancho máximo, 
+   margen centrado y espacio interno */
 .container {
     max-width: 80%;
     margin: auto;
     padding: 1.5em;
-   
 }
-.section{
+
+/* Estilos de la clase .section, que añade fondo, bordes redondeados, 
+   sombra y espacio interno */
+.section {
     background: #ffffff;
     border-radius: 10px;
     margin: auto;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 10px;
-
 }
 
-#inicio img{
+/* Estilos específicos para la imagen dentro del contenedor #inicio, 
+   ajustando su tamaño y bordes */
+#inicio img {
     width: 35%;
     max-width: 300px;
     border-radius: 5px;
 }
 
-#inicio .content {
-    width: 100%;
-    padding-left: 20px;
-}
-
+/* Configura el diseño del contenido dentro de #inicio para que se muestre 
+   en flex y alineado en la parte superior */
 #inicio {
     display: flex;
     align-items: flex-start;
 }
 
-
+/* Estilos para el contenedor .service, que añade un fondo, bordes, 
+   espacio interno y bordes redondeados */
 .service {
     background: #f9f9f9;
     border: 1px solid #ddd;
@@ -98,23 +118,15 @@ nav a:hover{
     border-radius: 5px;
 }
 
-input[type=submit]{
+/* Establece un ancho completo para los elementos de entrada de texto y botones de envío */
+input[type=submit],
+input[type=text],
+input[type=email],
+input[type=message] {
     width: 100%;
 }
 
-input[type=text]{
-    width: 100%;
-    
-}
-
-input[type=email]{
-    width: 100%;
-}
-
-input[type=message]{
-    width: 100%;
-}
-
+      /* Estilos para el botón de scroll to top */
 .scroll-to-top {
     position: fixed;
     bottom: 20px;
@@ -136,7 +148,7 @@ input[type=message]{
   }
   
 
-          /* Estilos para el modo oscuro */
+/* Estilos para el modo oscuro */
           body.dark-mode {
             background-color: #1a1a1a;
             color: #ffffff;

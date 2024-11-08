@@ -1,0 +1,11 @@
+Scroll to Top
+Mostrar/Ocultar el Botón: Se creó una función en JavaScript (toggleScrollToTopButton) que monitorea el evento de desplazamiento (scroll) de la ventana. Esta función verifica si el usuario ha desplazado la página hacia abajo más de 20 píxeles; si es así, muestra el botón de "Scroll to Top" cambiando su estilo para que sea visible. Si el usuario vuelve a la parte superior, el botón se oculta.
+Función de Desplazamiento Suave: Cuando el usuario hace clic en el botón de "Scroll to Top", se ejecuta la función scrollToTop. Esta función utiliza un intervalo para hacer que la página se desplace hacia arriba en pequeños pasos, proporcionando un efecto de desplazamiento suave en lugar de un salto abrupto.
+Código: Ambos comportamientos están vinculados mediante eventos de escucha (addEventListener), que activan la función de mostrar/ocultar en cada scroll y el desplazamiento al hacer clic en el botón.
+
+
+Modo Nocturno
+Botón de Alternancia: En la barra de navegación, se añadió un botón que permite alternar entre el modo claro y nocturno. Este botón activa una función JavaScript que aplica o quita la clase dark-mode al elemento body.
+Estilos de Modo Nocturno: La clase dark-mode contiene estilos CSS específicos para el modo oscuro, como fondo oscuro y texto claro. Al añadir o remover esta clase del body, todos los elementos de la página cambian automáticamente al estilo correspondiente.
+Guardar Preferencias del Usuario: Para recordar la preferencia de modo del usuario, se utiliza localStorage. Cuando el usuario selecciona el modo nocturno, la preferencia se guarda en localStorage. Al cargar la página, se verifica localStorage y, si el usuario tenía activado el modo nocturno, se aplica automáticamente.
+Código: Todo esto se conecta mediante un evento de clic (addEventListener) en el botón de modo nocturno, que alterna entre los modos y actualiza localStorage para guardar la preferencia.
